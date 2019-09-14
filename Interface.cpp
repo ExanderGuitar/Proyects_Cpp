@@ -15,9 +15,12 @@ void Interface::mainLoading () {
 
 //Show the first selectable menu
 void Interface::mainMenu () {
-   centerWords("Main");
-   lineDesign('-');
-   cout << "1. Salir" << endl;
+   centerWords("Main", ' ');
+   lineDesign('=');
+   cout << "1. Nuevo evento" << endl;
+   cout << "2. Mostrar linea temporal" << endl;
+   cout << "3. Buscar" << endl;
+   cout << "4. Salir" << endl;
 };
 
 //Print line with a select character
@@ -29,17 +32,17 @@ void Interface::lineDesign (char sim) {
    cout << endl;
 };
 
-//Prints a word centered with blank spaces
-void Interface::centerWords (string word) {
+//Prints a word centered with given char
+void Interface::centerWords (string word, char sim) {
    int midWord = word.length()/2;
    int mid = width/2;
 
    for(int i = 0; i < mid - midWord; i++) {
-      cout << " ";
+      cout << sim;
    };
    cout << word;
    for(int i = 0; i < width - mid; i++) {
-      cout << " ";
+      cout << sim;
    };
    cout << endl;
 };

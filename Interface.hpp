@@ -10,7 +10,7 @@ class Interface {
 	void mainMenu();
    private:
 	void lineDesign (char sim);
-	void centerWords (string word);
+	void centerWords (string word, char sim);
 	int width = 40;
 
 };
