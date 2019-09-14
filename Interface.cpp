@@ -21,6 +21,8 @@ void Interface::mainMenu () {
    cout << "2. Mostrar linea temporal" << endl;
    cout << "3. Buscar" << endl;
    cout << "4. Salir" << endl;
+   lineDesign('=');
+   cout << "Tu seleccion: ";
 };
 
 //Print line with a select character
