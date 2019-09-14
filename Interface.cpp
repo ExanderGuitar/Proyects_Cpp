@@ -1,8 +1,9 @@
 #include "Interface.hpp"
 
+//Show the main loading information
 void Interface::mainLoading () {
    system("cls");
-   
+
    lineDesign ('*');
    cout << "Welcome to Timeline" << endl;
    lineDesign ('-');
@@ -12,12 +13,14 @@ void Interface::mainLoading () {
 
 };
 
+//Show the first selectable menu
 void Interface::mainMenu () {
    centerWords("Main");
    lineDesign('-');
    cout << "1. Salir" << endl;
 };
 
+//Print line with a select character
 void Interface::lineDesign (char sim) {
    for (int i = 0; i < width; i++) {
       cout << sim;
@@ -26,6 +29,7 @@ void Interface::lineDesign (char sim) {
    cout << endl;
 };
 
+//Prints a word centered with blank spaces
 void Interface::centerWords (string word) {
    int midWord = word.length()/2;
    int mid = width/2;
