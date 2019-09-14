@@ -1,6 +1,8 @@
 #include "Interface.hpp"
 
 void Interface::mainLoading () {
+   system("cls");
+   
    lineDesign ('*');
    cout << "Welcome to Timeline" << endl;
    lineDesign ('-');
