@@ -1,0 +1,24 @@
+The idea of this program is to provide information about a protein sequence introduced
+as a query.
+
+Version 0.1
+-X- Ask for an amino acid sequence in 1 letter format.
+- - Show the information and finish the program.
+
+- - Make a structure to host each amino acid information. 
+- - Name of the amino acid.
+- - Molecular weight.
+- - Three letter name.
+- - One letter name.
+
+- - Save all amino acid data into a file.
+- - Load amino acid information at the beginning of the program.
+
+- - Count the ocurrence of each amino acid.
+- - Show the total number of amino acids.
+- - Show the total ocurrence for each amino acid and the relative presence in
+    the sequence.
+
+Version 0.2
+- - Check there are no strange or non codified letters.
+- - Save an history of inputed sequences.
